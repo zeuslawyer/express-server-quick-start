@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+console.log("hello", process.env.TEST);
+
 app.get("/", (req, res) => res.send("Hello World!"));
 app.get("/query", (req, res) => {
   console.log(req.query);
